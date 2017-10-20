@@ -1,0 +1,69 @@
+<!--html for cs441 computer software group project-->
+<html>
+	<head>
+		<title>Attendence Tracker</title>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" href= "metrStylesheet.css"	/>
+	</head>
+	
+	<body>	
+		<script>
+			function loginClick() 
+			{
+				//contact database with user name to return password
+				//if username not found notify "incorrect userrname or password", esle compare 
+				//input for password field with password on file, if mismatch notify"incorrect username or password"
+				//if match:
+				window.location.href = 'adminHomepage.html';
+			}
+		</script>
+		<div class = "container">
+			<header>Metrical Attendence Tracker</header>
+			<nav>
+				<div class="btn-group btn-group-justified">
+					<a button class="button">menuItem1</button>
+					<a button class="button">menuItem2</button>
+					<a button class="button">menuItem3</button>
+					<a button class="button">menuItem4</button>				
+				</div>	
+			</nav>
+			<section>
+				<div class="sec1">
+					<img src="download.jpg"	align="center" style="width:600px;height:400px;"	/>
+				</div>
+				<div class="sec2" align="right">
+					<h3>Login to account</h3>
+					Username: <input type="text"		/></br>
+					Password: <input type="text"		/></br>
+					<button background-color="navy" onclick="loginClick()">Login</button>
+				</div>
+			</section>
+			<article>
+				<p>nothing here yet</p>
+			</article>
+			<aside>
+				<p>This section can be used to share news about site with user</p>
+			</aside>
+			<footer>
+					<div class="column">
+						<h4>Credits</h4>
+						<h5>stuff</h5>
+						<h5>stuff</h5>
+						<h5>stuff</h5>
+					</div>			
+					<div class="column2">
+						<h4>Props</h4>
+						<h5>stuff</h5>
+						<h5>stuff</h5>
+						<h5>stuff</h5>
+					</div>					
+					<div class="column3">
+						<h4>Shout-outs</h4>
+						<h5>stuff</h5>
+						<h5>stuff</h5>
+						<h5>stuff</h5>
+					</div>
+			</footer>
+		</div>
+	</body>
+</html>
