@@ -1,0 +1,38 @@
+#logo{
+padding-top: 20px;
+padding-bottom: 20px;
+background-color: white;	
+color: #000080;
+font-family:'engravers mt';
+font-weight: bold;
+}
+
+#taskbar{
+background-color: #000080;
+}
+
+#taskbar a{
+color: white;
+}
+
+
+#backimage{
+	background: url('csusm.jpg') repeat-x;
+	height: 350px;
+
+}
+
+#signin{
+	background-color: green;
+color: white;	
+}
+
+#footerOne{
+	background-color: gray;
+	padding-top: 20px;
+padding-bottom: 20px;
+}
+
+#footerOne a{
+color: black;
+}
