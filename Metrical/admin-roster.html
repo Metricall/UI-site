@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--admin
+ -->
+<html lang = "en">
+  <head>
+    <link rel = "stylesheet" type = "text/css" href = "bootstrap.css">
+	<link rel = "stylesheet" type = "text/css" href = "mainmetrical.css">
+	<link rel = "stylesheet" type = "text/css" href = "roster.css">
+    <title> Admin-Roster </title>
+    <meta charset = "utf-8">
+  </head>
+  <body>
+	<script src = "roster.js"></script>
+	<div class = 'row' id = 'logo'>
+		<div class = 'col-xs-1'></div>
+		<div class = 'col-xs-3'><h2>M e t r i c a l </h2></div>
+		<div class = 'col-xs-4'><img src = 'metrical3.png' width = '80px' ></div>
+		<div class = 'col-xs-5'></div>
+	</div>
+	<div class = 'row' id = 'taskbar'>
+		<div class = 'col-xs-1'></div>
+		<div class = 'col-xs-2'><a href = 'admin_roster.html'><h4>Rosters</h4></a></div>
+		<div class = 'col-xs-2'><a href = 'admin_session.html'><h4>Sessions</h4></a></div>
+		<div class = 'col-xs-2'><a href = 'admin_user.html'><h4>Users</h4></a></div>
+		<div class = 'col-xs-2'><a href = 'admin_location.html'><h4>Locations</h4></a></div>
+		<div class = 'col-xs-2'><a href = 'admin_reports.html'><h4>Reports</h4></a></div>
+	</div><br>
+	<form name="form1" method="POST" action="metricalsite.php">
+	<center>
+		<p class="welcome">Welcome: Admin-name later</p>
+	</center>
+	<center>Search:
+		<select id="myDropdown" onchange="itemSelected();">
+			<option value="roster">Roster ID</option>
+			<option value="session">Session</option>
+			<option value="student">Student</option>
+			<option value="location">Location</option>
+			<option value="professor">Professor</option>
+		</select>
+		<input type = "text" id="searchTarget">
+		<input type="submit" value="login" name="submit" onclick="showSearch();">
+	</center><br>
+	</form>
+	<center>
+		<button class="createButton" id="creatRosId" type="button" onclick="newRosForm();">
+			Create Roster</button>
+		<div class="form" id="newForm">
+			<form id="formList"> 
+				Roster ID:	<input type="text" id="id" name="id"><br>
+				Professor:	<input type="text" id="prof" name="prof"><br>
+				Location:	<input type="text"id="loc" name="loc"><br>
+				<input type="submit" value="Finish" onclick="submitNew();">
+			</form>
+		</div>
+	</center><br>
+	<center>
+		<table id="infoTable" class="infoTable">
+			<tr>
+				<th>Company</th>
+				<th>Contact</th>
+				<th>Country</th>
+			  </tr>
+			  <tr>
+				<td>Alfreds Futterkiste</td>
+				<td>Maria Anders</td>
+				<td>Germany</td>
+			  </tr>
+			  <tr>
+				<td>Centro comercial Moctezuma</td>
+				<td>Francisco Chang</td>
+				<td>Mexico</td>
+			  </tr>
+			  <tr>
+				<td>Ernst Handel</td>
+				<td>Roland Mendel</td>
+				<td>Austria</td>
+			  </tr>
+			  <tr>
+				<td>Island Trading</td>
+				<td>Helen Bennett</td>
+				<td>UK</td>
+			  </tr>
+			  <tr>
+				<td>Laughing Bacchus Winecellars</td>
+				<td>Yoshi Tannamuri</td>
+				<td>Canada</td>
+			  </tr>
+			  <tr>
+				<td>Magazzini Alimentari Riuniti</td>
+				<td>Giovanni Rovelli</td>
+				<td>Italy</td>
+			  </tr>
+		</table>
+	</center>
+  </body>
+</html>
