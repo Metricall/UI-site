@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--admin
+ -->
+<html lang = "en">
+  <head>
+    <link rel = "stylesheet" type = "text/css" href = "bootstrap.css">
+	<link rel = "stylesheet" type = "text/css" href = "mainmetrical.css">
+	<link rel = "stylesheet" type = "text/css" href = "roster.css">
+    <title> Admin-Sessions </title>
+    <meta charset = "utf-8">
+  </head>
+  <body>
+	<script src = "roster.js"></script>
+	<div class = 'row' id = 'logo'>
+		<div class = 'col-xs-1'></div>
+		<div class = 'col-xs-3'><h2>M e t r i c a l </h2></div>
+		<div class = 'col-xs-4'><img src = 'metrical3.png' width = '80px' ></div>
+		<div class = 'col-xs-5'></div>
+	</div>
+	<div class = 'row' id = 'taskbar'>
+		<div class = 'col-xs-1'></div>
+		<div class = 'col-xs-2'><a href = 'admin_roster.html'><h4>Rosters</h4></a></div>
+		<div class = 'col-xs-2'><a href = 'admin_session.html'><h4>Sessions</h4></a></div>
+		<div class = 'col-xs-2'><a href = 'admin_user.html'><h4>Users</h4></a></div>
+		<div class = 'col-xs-2'><a href = 'admin_location.html'><h4>Locations</h4></a></div>
+		<div class = 'col-xs-2'><a href = 'admin_reports.html'><h4>Reports</h4></a></div>
+	</div><br>
+	<form name="form1" method="POST" action="metricalsite.php">
+	<center>
+		<p class="welcome">Welcome: Admin-name later</p>
+	</center>
+	<center>Search:
+		<select id="myDropdown" onchange="itemSelected();">
+			<option value="roster">Roster ID</option>
+			<option value="session">Session  ID</option>
+			<option value="student">Student</option>
+			<option value="location">Location</option>
+			<option value="professor">Professor</option>
+			<option value="start time">Session Start Time</option>
+			<option value="date">Date</option>
+		</select>
+		<input type = "text" id="searchTarget">
+		<input type="submit" value="login" name="submit" onclick="showSearch();">
+	</center><br>
+	</form>
+	<center>
+		<button class="createButton" id="creatRosId" type="button" onclick="newRosForm();">
+			Create Session</button>
+		<div class="form" id="newForm">
+			<form id="formList"> 
+				Session ID:	<input type="text"id="sesId" name="seesId"><br>
+				Roster ID:	<input type="text" id="id" name="id"><br>
+				Professor:	<input type="text" id="prof" name="prof"><br>
+				Location:	<input type="text"id="loc" name="loc"><br>
+				Start time:	<input type="text"id="start" name="start"><br>
+				End Time:	<input type="text"id="end" name="end"><br>
+				Date:	<input type="text"id="date" name="date"><br>
+				Attended:	<input type="text"id="attend" name="attend"><br>
+				<input type="submit" value="Finish" onclick="submitNew();">
+			</form>
+		</div>
+	</center><br>
+	<center>
+		<table id="infoTable" class="infoTable">
+			
+		</table>
+	</center>
+  </body>
+</html>

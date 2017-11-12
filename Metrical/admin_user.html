@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--admin
+ -->
+<html lang = "en">
+  <head>
+    <link rel = "stylesheet" type = "text/css" href = "bootstrap.css">
+	<link rel = "stylesheet" type = "text/css" href = "mainmetrical.css">
+	<link rel = "stylesheet" type = "text/css" href = "roster.css">
+    <title> Admin-User </title>
+    <meta charset = "utf-8">
+  </head>
+  <body>
+	<script src = "roster.js"></script>
+	<div class = 'row' id = 'logo'>
+		<div class = 'col-xs-1'></div>
+		<div class = 'col-xs-3'><h2>M e t r i c a l </h2></div>
+		<div class = 'col-xs-4'><img src = 'metrical3.png' width = '80px' ></div>
+		<div class = 'col-xs-5'></div>
+	</div>
+	<div class = 'row' id = 'taskbar'>
+		<div class = 'col-xs-1'></div>
+		<div class = 'col-xs-2'><a href = 'admin_roster.html'><h4>Rosters</h4></a></div>
+		<div class = 'col-xs-2'><a href = 'admin_session.html'><h4>Sessions</h4></a></div>
+		<div class = 'col-xs-2'><a href = 'admin_user.html'><h4>Users</h4></a></div>
+		<div class = 'col-xs-2'><a href = 'admin_location.html'><h4>Locations</h4></a></div>
+		<div class = 'col-xs-2'><a href = 'admin_reports.html'><h4>Reports</h4></a></div>
+	</div><br>
+	<form name="form1" method="POST" action="metricalsite.php">
+	<center>
+		<p class="welcome">Welcome: Admin-name later</p>
+	</center>
+	<center>Search:
+		<select id="myDropdown" onchange="itemSelected();">
+			<option value="roster">Roster ID</option>
+			<option value="session">Session ID</option>
+			<option value="student">Student ID</option>
+			<option value="location">Location ID</option>
+			<option value="professor">Professor</option>
+		</select>
+		<input type = "text" id="searchTarget">
+		<input type="submit" value="login" name="submit" onclick="showSearch();">
+	</center><br>
+	</form>
+	<center>
+		<button class="createButton" id="creatRosId" type="button" onclick="newRosForm();">
+			Create User</button>
+		<div class="form" id="newForm">
+			<form id="formList"> 
+				Roster ID:	<input type="text" id="id" name="id"><br>
+				Role:	<input type="text" id="role" name="role"><br>
+				First Name:	<input type="text" id="first" name="first"><br>
+				Last Name:	<input type="text" id="last" name="last"><br>
+				ID#:	<input type="text" id="idNum" name="idNum"><br>
+				Password:	<input type="text" id="pass" name="pass"><br>
+				Email:	<input type="text" id="email" name="email"><br>
+				Active:	<input type="text" id="active" name="active"><br>
+				
+				<input type="submit" value="Finish" onclick="submitNew();">
+			</form>
+		</div>
+	</center><br>
+	<center>
+		<table id="infoTable" class="infoTable">
+		</table>
+	</center>
+  </body>
+</html>
