@@ -25,7 +25,7 @@
 		<div class = 'col-xs-2'><a href = 'admin_location.html'><h4>Locations</h4></a></div>
 		<div class = 'col-xs-2'><a href = 'admin_reports.html'><h4>Reports</h4></a></div>
 	</div><br>
-	<form name="form1" method="POST" action="metricalsite.php">
+	<form name="form1" method="POST">
 	<center>
 		<p class="welcome">Welcome: Admin-name later</p>
 	</center>
@@ -38,58 +38,25 @@
 			<option value="professor">Professor</option>
 		</select>
 		<input type = "text" id="searchTarget">
-		<input type="submit" value="login" name="submit" onclick="showSearch();">
+		<input type="submit" value="Submit" name="submit" onclick="showSearch();">
 	</center><br>
 	</form>
 	<center>
 		<button class="createButton" id="creatRosId" type="button" onclick="newRosForm();">
-			Create Roster</button>
-		<div class="form" id="newForm">
-			<form id="formList"> 
-				Roster ID:	<input type="text" id="id" name="id"><br>
-				Professor:	<input type="text" id="prof" name="prof"><br>
-				Location:	<input type="text"id="loc" name="loc"><br>
-				<input type="submit" value="Finish" onclick="submitNew();">
+			Create Roster</button>		
+		<div class="form-style" id="newForm">
+			<div class="form-style-heading">Roster Information: </div>
+			<form action="" method="post">
+				<label for="id"><span>Roster ID </span><input type="text" class="input-field" name="id" id="id" value="" /></label>
+				<label for="prof"><span>Professor </span><input type="text" class="input-field" name="prof" id="prof" value="" /></label>
+				<label for="loc"><span>Location </span><input type="text" class="input-field" name="loc" id="loc" value="" /></label>
+				<label><span>&nbsp;</span><input type="submit" value="Submit" onclick="submitNew();"/></label>
 			</form>
 		</div>
 	</center><br>
 	<center>
 		<table id="infoTable" class="infoTable">
-			<tr>
-				<th>Company</th>
-				<th>Contact</th>
-				<th>Country</th>
-			  </tr>
-			  <tr>
-				<td>Alfreds Futterkiste</td>
-				<td>Maria Anders</td>
-				<td>Germany</td>
-			  </tr>
-			  <tr>
-				<td>Centro comercial Moctezuma</td>
-				<td>Francisco Chang</td>
-				<td>Mexico</td>
-			  </tr>
-			  <tr>
-				<td>Ernst Handel</td>
-				<td>Roland Mendel</td>
-				<td>Austria</td>
-			  </tr>
-			  <tr>
-				<td>Island Trading</td>
-				<td>Helen Bennett</td>
-				<td>UK</td>
-			  </tr>
-			  <tr>
-				<td>Laughing Bacchus Winecellars</td>
-				<td>Yoshi Tannamuri</td>
-				<td>Canada</td>
-			  </tr>
-			  <tr>
-				<td>Magazzini Alimentari Riuniti</td>
-				<td>Giovanni Rovelli</td>
-				<td>Italy</td>
-			  </tr>
+		
 		</table>
 	</center>
   </body>
