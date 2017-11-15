@@ -25,31 +25,36 @@
 		<div class = 'col-xs-2'><a href = 'admin_location.html'><h4>Locations</h4></a></div>
 		<div class = 'col-xs-2'><a href = 'admin_reports.html'><h4>Reports</h4></a></div>
 	</div><br>
-	<form name="form1" method="POST" action="metricalsite.php">
-	<center>
-		<p class="welcome">Welcome: Admin-name later</p>
-	</center>
-	<center>Search:
-		<select id="myDropdown" onchange="itemSelected();">
-			<option value="roster">Roster ID</option>
-			<option value="session">Session ID</option>
-			<option value="student">Student</option>
-			<option value="location">Location</option>
-			<option value="professor">Professor</option>
-		</select>
-		<input type = "text" id="searchTarget">
-		<input type="submit" value="login" name="submit" onclick="showSearch();">
-	</center><br>
+	<form name="form1" method="POST">
+		<center>
+			<p class="welcome">Welcome: Admin-name later</p>
+		</center>
+		<center>Search:
+			<select id="myDropdown" onchange="itemSelected();">
+				<option value="roster">Roster ID</option>
+				<option value="session">Session ID</option>
+				<option value="student">Student</option>
+				<option value="location">Location</option>
+				<option value="professor">Professor</option>
+			</select>
+			<input type = "text" id="searchTarget">
+			<input type="submit" value="Submit" name="submit" onclick="showSearch();">
+		</center><br>
 	</form>
 	<center>
 		<button class="createButton" id="creatRosId" type="button" onclick="newRosForm();">
 			Create Location</button>
-		<div class="form" id="newForm">
-			<form id="formList"> 
-				Room:	<input type="text" id="id" name="id"><br>
-				not sure:	<input type="text" id="prof" name="prof"><br>
-				what else:	<input type="text"id="loc" name="loc"><br>
-				<input type="submit" value="Finish" onclick="submitNew();">
+		<div class="form-style" id="newForm">
+			<div class="form-style-heading">Location Information: </div>
+			<form action="" method="post">
+				<label><span>Location ID: </span><input type="text" class="input-field" id="loc" value="" /></label>
+				<label><span>Room Number: </span><input type="text" class="input-field" id="room" value="" /></label>
+				<label><span>Building: </span><input type="text" class="input-field" id="bldg" value="" /></label>
+				<label><span>Locked: </span><select type="text" class="select-field" id="lock" value="">				
+					<option value="lock">Locked</option>
+					<option value="unlock">Unlock</option>
+				</select></label>
+				<label><span>&nbsp;</span><input type="submit" value="Submit" onclick="submitNew();"/></label>
 			</form>
 		</div>
 	</center><br>
