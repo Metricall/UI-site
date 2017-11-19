@@ -1,0 +1,217 @@
+#logo{
+padding-top: 20px;
+padding-bottom: 20px;
+background-color: white;	
+color: #000080;
+font-family:'engravers mt';
+font-weight: bold;
+}
+
+#taskbar{
+background-color: #000080;
+}
+
+#taskbar1{
+background-color: #000080;
+color: white;
+}
+
+#taskbar a{
+color: white;
+}
+
+#taskbar1 a{
+color: white;
+}
+
+
+#backimage{
+background: url('csusm.jpg');
+height: 250px;
+ background-repeat: no-repeat;
+ background-size: 35%;
+background-position: center;
+
+}
+
+#signin{
+background-color: green;
+color: white;	
+}
+
+#footerOne{
+background-color: gray;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+#footerOne a{
+color: black;
+}
+
+#teamnames{
+padding-top: 30px;
+padding-bottom: 30px;
+margin-left: 23%;
+}
+
+#teamnames2{
+margin-left: 23%;
+text-align: center;
+
+}
+
+#crystele{
+margin-right: 10px;
+padding-top: 30px;
+padding-bottom: 30px;
+background-color: #3CB371;	
+color: black;
+}
+
+#john{
+margin-right: 10px;
+padding-top: 30px;
+padding-bottom: 30px;
+background-color: #A9A9A9;	
+color: black;	
+}
+
+#matt{
+margin-right: 10px;
+padding-top: 30px;
+padding-bottom: 30px;
+background-color: #3CB371;	
+color: black;		
+}
+
+#victor{
+padding-top: 30px;
+padding-bottom: 30px;
+background-color: #A9A9A9;	
+color: black;		
+}
+
+#jason{
+margin-right: 10px;
+padding-top: 30px;
+padding-bottom: 30px;
+background-color: #3CB371;	
+color: black;		
+}
+
+#michael{
+margin-right: 10px;
+padding-top: 30px;
+padding-bottom: 30px;
+background-color: #A9A9A9;	
+color: black;		
+}
+
+#alejandro{
+margin-right: 10px;
+padding-top: 30px;
+padding-bottom: 30px;
+background-color: #3CB371;	
+color: black;		
+}
+
+#firstform{
+font-size: 1em;
+font-weight: bold;
+text-align: center;	
+}
+
+#lastform{
+font-size: 1em;
+font-weight: bold;
+text-align: center;		
+}
+
+#emailform{
+font-size: 1em;
+font-weight: bold;
+text-align: center;	
+}
+
+#messageform{
+font-size: 1em;
+font-weight: bold;
+text-align: center;		
+}
+
+#box{
+width: 250px;
+height: 30px;
+font-size: 1em;
+background-color: white;
+border-color:#3CB371;
+}
+
+#boxm{
+width: 250px;
+height: 80px;
+font-size: 1em;	
+background-color: white;
+border-color:#3CB371;
+}
+
+#submitform{
+font-size: 1em;	
+background-color: green;
+width: 150px;
+color: white;
+}
+
+#backcolor{
+border-style: solid;
+margin-left: 600px;
+margin-right: 100px;
+border-radius: 360px;
+border-color: #1E90FF;
+
+}
+
+#team{
+color:black;
+}
+
+#backcolor1{
+background-image: url('contact8.jpg');
+opacity: 1;
+filter: alpha(opacity=100);	
+background-size: 100%;
+}
+
+#teamback{
+padding-top: 120px;
+padding-bottom: 120px;
+background-image: url('aboutpic.jpg');	
+background-size: 100%;
+}
+
+#resources1{
+padding-top: 500px;
+background-image: url('resources1.jpg');	
+background-size: 100%;
+margin-left: 100px;
+margin-right: 100px;		
+}
+
+#classes{
+text-align: center;	
+}
+
+#class1{
+text-align: center;	
+padding-top: 15px;
+padding-bottom:15px;
+padding-left: 100px;
+padding-right:100px;
+background-color: #3CB371;
+color: white;
+font-size: 1.5em;
+border-bottom-style: solid;
+border-color: #A9A9A9;
+}
+
