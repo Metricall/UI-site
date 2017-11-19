@@ -19,7 +19,7 @@
 	</div>
 	<div class = 'row' id = 'taskbar'>
 	<div class = 'col-xs-1'></div>
-	<div class = 'col-xs-2'><a href = 'createsession.html'><h4>Sessions</h4></a></div>
+	<div class = 'col-xs-2'><a href = 'createsession.html'><h4>Create Session</h4></a></div>
 	<div class = 'col-xs-2'><a href = 'generatereport.html'><h4>Generate Report</h4></a></div>
 	<div class = 'col-xs-6'><a href = 'editstudents.html'><h4>Edit Students</h4></a></div>
 	<div class = 'col-xs-1'><a href = 'metricalsite.html'><h4>Logout</h4></a></div>
@@ -31,6 +31,7 @@
 	</div><br>
 	<table border="1" id = 'roster'>
   <tr>
+  <th></th>
     <th id = 'color11'>Name</th>
     <th id = 'color22'>StudentID</th>
 	<th id = 'color33'>1/23</th>
@@ -45,8 +46,10 @@
     <th id = 'color44'>3/27</th>
 	<th id = 'color33'>4/05</th>
     <th id = 'color44'>4/12</th>
+	<th></th>
   </tr>
   <tr>
+  <td><input type = "button" value = 'edit' id ='editstudent1' onclick ='editstudent()'></td>
 	<td id = 'color11'>Matthew Affa</td>
 	<td id = 'color22'>123456</td>
 	<td align = 'center'><input type="checkbox" disabled id="absent"></td>
@@ -61,8 +64,10 @@
 	<td align = 'center'><input type="checkbox" disabled id="absent"></td>
 	<td align = 'center'><input type="checkbox" disabled id="absent"></td>
 	<td align = 'center'><input type="checkbox" disabled id="absent"></td>
+	<td align = 'center'><input type = "button" value = 'save' id = 'savestudent1' onclick ='savestudent()'></td>
   </tr>
   <tr>
+  <td><input type = "button" value = 'edit' id ='editstudent2'></td>
 	<td id = 'color11'>Crystele Dierickx</td>
 	<td id = 'color22'>567890</td>
 	<td align = 'center'><input type="checkbox" disabled id="absent"></td>
@@ -77,8 +82,10 @@
 	<td align = 'center'><input type="checkbox" disabled id="absent"></td>
 	<td align = 'center'><input type="checkbox" disabled id="absent"></td>
 	<td align = 'center'><input type="checkbox" disabled id="absent"></td>
+	<td align = 'center'><input type = "button" value = 'save' id = 'savestudent2'></td>
   </tr>
    <tr>
+  <td><input type = "button" value = 'edit' id ='editstudent3'></td>
 	<td id = 'color11'>Victor Zavala</td>
 	<td id = 'color22'>987654</td>
 	<td align = 'center'><input type="checkbox" disabled id="absent"></td>
@@ -93,6 +100,7 @@
 	<td align = 'center'><input type="checkbox" disabled id="absent"></td>
 	<td align = 'center'><input type="checkbox" disabled id="absent"></td>
 	<td align = 'center'><input type="checkbox" disabled id="absent"></td>
+	<td align = 'center'><input type = "button" value = 'save' id = 'savestudent3'></td>
   </tr>
 </table>
 	</body>

@@ -7,9 +7,26 @@ function goIn()
     document.location.href = 'adminmain.html';
 
     else if (logins.value == 'professor' && pas.value == '67890')
-    document.location.href = 'professormain.html';
+    document.location.href = 'professorclasses.html';
 	
 	
 	else
 		alert("Wrong log-in, Please try again!");		
+}
+
+function editstudent()
+{
+	document.getElementById('absent').disabled = false;	
+	
+	
+	
+	
+}
+
+function savestudent()
+{
+document.getElementById('absent').disabled = true;		
+	
+	
+	
 }
