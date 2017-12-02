@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--sessions
+ -->
+<html lang = "en">
+  <head>
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script> 
+<script type="text/javascript" src="moment.min.js"></script> 
+
+   <link rel = "stylesheet" type = "text/css" href = "css/bootstrap.css">
+    <link rel = "stylesheet" type = "text/css" href = "mainmetrical.css">
+	<script type = "text/javascript" src = "metricalsite.js">
+    </script>
+    <title> sessions </title>
+    <meta charset = "utf-8">
+  </head>
+  <body>
+  <div class = 'row' id = 'logo'>
+	<div class = 'col-xs-1'></div>
+	<div class = 'col-xs-3'><h2>M e t r i c a l </h2></div>
+	<div class = 'col-xs-4'><a href = 'professorclasses.html'><img src = 'metrical3.png' width = '80px' ></a></div>
+	<div class = 'col-xs-5'></div>
+	</div>
+	<div class = 'row' id = 'taskbar'>
+	<div class = 'col-xs-1'></div>
+	<div class = 'col-xs-2'><a href = 'createsession.html'><h4>Sessions</h4></a></div>
+	<div class = 'col-xs-2'><a href = 'generatereport.html'><h4>Generate Report</h4></a></div>
+	<div class = 'col-xs-6'><a href = 'editstudents.html'><h4>Edit Students</h4></a></div>
+	<div class = 'col-xs-1'><a href = 'metricalsite.html'><h4>Logout</h4></a></div>
+	</div><br><br>
+	
+	<div class = 'row' id = 'yourclasses'>
+	<div class = 'col-xs-5'></div>
+	<div class = 'col-xs-7'><h2>Create a Session</h2></div>
+	</div><br>
+	<div class = 'row' id = 'lastform'>
+	<div class = 'col-xs-3'></div>
+	<div class = 'col-xs-2'>Date</div>
+	<div class = 'col-xs-7'>
+	<div class="container">
+    <div class="row">
+        <div class='col-sm-3'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker2'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker2').datetimepicker({
+                format: 'MM/DD/YYYY'
+            });
+            });
+        </script>
+    </div>
+</div>
+	</div>
+	</div><br>
+	<div class = 'row' id = 'lastform'>
+	<div class = 'col-xs-3'></div>
+	<div class = 'col-xs-2'>From</div>
+	<div class = 'col-xs-7'>
+	<div class="container">
+    <div class="row">
+        <div class='col-sm-3'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+							$('#datetimepicker1').datetimepicker({
+                    format: 'LT'
+                });
+            });
+        </script>
+    </div>
+</div>
+	</div>
+	</div><br>
+	<div class = 'row' id = 'lastform'>
+	<div class = 'col-xs-3'></div>
+	<div class = 'col-xs-2'>From</div>
+	<div class = 'col-xs-7'>
+	<div class="container">
+    <div class="row">
+        <div class='col-sm-3'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker3'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+							$('#datetimepicker3').datetimepicker({
+                    format: 'LT'
+                });
+            });
+        </script>
+    </div>
+</div>
+	</div>
+	</div><br>
+	<div class = 'row' id = 'sendbutton'>
+	<div class = 'col-xs-5'></div>
+	<div class = 'col-xs-3'><input type = 'submit' id = 'submitform' value = 'Create'></div>
+	</div><br><br><br>
+	
+	<table border="1" id = 'roster'>
+  <tr>
+    <th id = 'color11'>Session ID</th>
+    <th id = 'color22'>Session Name</th>
+	<th id = 'color11'>Date</th>
+    <th id = 'color22'>from</th>
+	<th id = 'color11'>to</th>
+  </tr>
+  <tr>
+	<td id = 'color11'>11111</td>
+	<td id = 'color22'>Test # 1</td>
+	<td id = 'color11'>March 21, 2018</td>
+	<td id = 'color22'>10:30 AM</td>
+	<td id = 'color22'>12:00 PM</td>
+</table>
+
+<script type="text/javascript" src="datepicker.js"></script> 
+	
+ </body>
+</html>
